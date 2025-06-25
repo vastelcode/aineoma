@@ -1,7 +1,7 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(50px); /* Небольшое смещение вверх */
+    transform: translateY(50px); 
   }
   to {
     opacity: 1;
@@ -58,6 +58,23 @@
   }
 }
 
+@keyframes levitate {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, -20px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, -30px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-5px, -20px) rotate(-5deg);
+  }
+}
+
+
+
 
 // Готовые миксины для анимаций
 
@@ -71,4 +88,8 @@
 
 @mixin fade-in($duration: 0.3s) {
   animation: fadeIn $duration ease-in-out;
+}
+
+@mixin levitate($duration:0.3s) {
+  animation: levitate $duration infinite ease-in-out alternate;
 }

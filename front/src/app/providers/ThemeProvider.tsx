@@ -8,6 +8,7 @@ type ThemeVariables = {
   '--color-bg':string;
   '--color-text':string;
   '--color-input':string;
+  '--color-tabs':string;
 };
 
 // конфигурация цветовых схем
@@ -15,12 +16,14 @@ const THEME_CONFIG: Record<'light' | 'dark', ThemeVariables> = {
   light : {
     '--color-bg':'#F0F1FB',
     '--color-text':'#212D31',
-    '--color-input':'#CCDCFC'
+    '--color-input':'#CCDCFC',
+    '--color-tabs':'#F3F5F8'
   },
   dark: {
     '--color-bg': '#212D31',
     '--color-text': '#F0F1FB',
-    '--color-input': '#404A50'
+    '--color-input': '#404A50',
+    '--color-tabs': '#303030'
   }
 };
 // провайдер для темы

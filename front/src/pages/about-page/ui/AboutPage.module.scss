@@ -1,12 +1,74 @@
 @use '@/shared/styles' as *;
 
 .container {
+  @include fade-in(0.5s);
   width: 100%;
   height: auto;
   min-height: 967px;
   background-color: var(--color-bg);
-  transition: .3s;
+  transition: $st-trans;
 }
 .content {
   width: $content-size-1;
+  gap: 50px;
+}
+.header, .servises__header {
+  font-family: 'RoadRadio';
+  font-weight: 700;
+  font-size: $fz-h1;
+  color: var(--color-text);
+  transition: $st-trans;
+  margin-bottom: 38px;
+}
+.text {
+  margin-bottom: 20px;
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: $fz-subtitle;
+  color: var(--color-text);
+}
+.ul {
+  color: var(--color-text);
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: $fz-medium;
+  margin-bottom: 50px;
+}
+.li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  &::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--color-text);
+  }
+}
+.btn {
+  width: 281px;
+  height: 65px;
+}
+
+.wrapper {
+  min-width: 500px;
+  min-height: 640px;
+  background-image: url('@/shared/assets/images/image-shadow-main.webp');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: $st-trans;
+  border-radius: 50px;
+  position: relative;
+  overflow: visible
+}
+.img-people {
+  @include levitate(6s);
+}
+
+.servises {
+  width: $content-size-1;
+  gap: 65px;
 }
