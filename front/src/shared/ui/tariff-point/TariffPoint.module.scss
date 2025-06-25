@@ -1,0 +1,21 @@
+@use "@/shared/styles" as *;
+
+.tariff-point {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 19px;
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: $fz-body;
+  color: $color-black;
+  .tariff-point__wrapper {
+    @include flex-gap(10px);
+    align-items: center;
+  }
+  .tariff-point__icon {
+    width: 8px;
+    height: 11px;
+  }
+}

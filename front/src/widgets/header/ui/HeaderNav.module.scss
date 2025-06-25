@@ -1,0 +1,65 @@
+@use '@/shared/styles' as *;
+
+.header {
+  @extend %flex-center;
+  width: 100%;
+  height: 70px;
+  background-color: var(--color-bg);
+  border-bottom: 5px rgba($color: #000000, $alpha: 0.25) solid;
+  font-family: 'Mulish';
+  transition: $st-trans;
+  &__content {
+    width: $content-size-1;
+    height: fit-content;
+    justify-content: space-between;
+    display: flex;
+  }
+  &__logo {
+    width: 30px;
+    height: 30px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    color: var(--color-text);
+    font-size: $fz-medium;
+    font-weight: 400;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    &-point {
+      position: relative;
+      display: block;
+      width: fit-content;
+      cursor: pointer;
+    }
+    &-point::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      border-radius: 1px;
+      background-color: $color-primary;
+      transition: $st-trans;
+      transform: scaleX(0);
+    }
+    &-point:hover::after {
+      transform: scaleX(1);
+    }
+
+  }
+  &__btn {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    border-radius: 15px;
+    width: 164px;
+    height: 45px;
+  }
+}

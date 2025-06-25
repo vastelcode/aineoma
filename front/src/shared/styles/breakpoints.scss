@@ -1,0 +1,29 @@
+$breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px
+);
+
+@mixin media-up($breakpoint) {
+  $min: map-get($breakpoints, $breakpoint);
+  
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @error "Unknown breakpoint `#{$breakpoint}`.";
+  }
+}
+
+// Пример использования:
+// .element {
+//   width: 100%;
+//   
+//   @include media-up('md') {
+//     width: 50%;
+//   }
+// }

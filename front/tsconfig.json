@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "strict": true,
+    "target": "esnext",
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
+    "baseUrl": "./src", // Критически важно!
+    "paths": {
+      "@/*": ["./*"],
+      "@/shared/*": ["shared/*"]
+    },
+    "types": ["vite/client"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts", 
+    "src/**/*.tsx",
+    "vite.config.ts"
+  ]
+}

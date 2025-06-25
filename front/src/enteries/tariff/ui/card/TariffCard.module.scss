@@ -1,0 +1,30 @@
+@use "@/shared/styles" as *;
+
+body {
+  background-color: black;
+}
+
+.tariff-card {
+  margin: 10px;
+  background-color: $color-white;
+  border-radius: 20px;
+  @include flex-column-gap(100px);
+  width: 360px;
+  height: 628px;
+  padding: 20px 20px 60px 20px;
+  font-family: 'Mulish';
+  &__wrapper {
+    @include flex-column-gap(70px);
+  }
+  &__wrapper-points {
+    @include flex-column-gap(10px);
+  }
+  &__wrapper-tariff {
+    @include flex-column-gap(30px);
+  }
+  &__price {
+    font-weight: 700;
+    font-size: $fz-subtitle;
+    color: $color-black;
+  }
+}

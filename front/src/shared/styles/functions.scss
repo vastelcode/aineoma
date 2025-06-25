@@ -1,0 +1,23 @@
+// Конвертация пикселей в rem
+@function rem($pixels, $context: 16px) {
+  @return ($pixels / $context) * 1rem;
+}
+
+// Рассчет контрастного цвета
+@function contrast-color($color) {
+  @if (lightness($color) > 60) {
+    @return #000; // Для светлых фонов - черный текст
+  } @else {
+    @return #fff; // Для темных фонов - белый текст
+  }
+}
+
+// Затемнение цвета
+@function shade($color, $percent) {
+  @return mix(black, $color, $percent);
+}
+
+// Осветление цвета
+@function tint($color, $percent) {
+  @return mix(white, $color, $percent);
+}

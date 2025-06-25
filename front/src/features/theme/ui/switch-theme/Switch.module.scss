@@ -1,0 +1,43 @@
+@use '@/shared/styles' as *;
+
+.switch {
+  margin: 10px;
+  @extend %flex-center;
+  width: 63px;
+  height: 30px;
+  border: #e1e2ee 2px solid;
+  border-radius: 50px;
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    position: relative;
+    padding: 2px;
+    transition: $st-trans;
+    &--dark {
+      background-color: $color-black;
+    }
+    &--light {
+      background-color: $color-white;
+    }
+  }
+  &__circle {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    border-radius: 50%;
+    transition: $st-trans;
+    &--light {
+      border: #ffc600 1px solid;
+      background-color: $color-yellow;
+      left: 60%;
+    }
+    &--dark {
+      border: #d7c0c3 1px solid;
+      border-radius: 50%;
+      background-color: $color-white;
+      left: 5%;
+    }
+
+  }
+}

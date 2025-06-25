@@ -1,0 +1,11 @@
+@use "@/shared/styles" as *;
+
+.icon {
+  width: auto;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter $st-trans;
+  &--active,&:hover {
+    filter: grayscale(0%);
+  }
+}

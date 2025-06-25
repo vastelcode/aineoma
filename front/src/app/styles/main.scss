@@ -1,0 +1,21 @@
+// импорт шрифтов
+@use "./fonts";
+// импорт общих стилей
+@use "@/shared/styles" as *;
+
+body {
+  @extend %flex-center;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: $st-trans;
+}
+
+main {
+  padding-top: 20px;
+}
+
+
+#root {
+  min-width: 1920px;
+  height: auto;
+}

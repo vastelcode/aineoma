@@ -1,0 +1,22 @@
+@use '@/shared/styles' as *;
+
+.message-layout {
+  @extend %flex-center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 45px;
+  width: 100%;
+  min-height: 967px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  position: relative;
+  background-image: url("@/shared/assets/images/image-shadow.webp");
+  background-repeat: no-repeat;
+  background-position: right top;
+  &__header {
+    font-family: 'RoadRadio';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+  }
+}

@@ -1,0 +1,12 @@
+@use '@/shared/styles' as *;
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 967px;
+  background-color: var(--color-bg);
+  transition: .3s;
+}
+.content {
+  width: $content-size-1;
+}
