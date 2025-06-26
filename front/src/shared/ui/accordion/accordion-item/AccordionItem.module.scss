@@ -1,0 +1,48 @@
+@use '@/shared/styles' as *;
+
+.container {
+  width: $content-size-1;
+  border-radius: 20px;
+  background-color: var(--color-tabs);
+  padding: 0px 100px;
+  transition: $st-trans;
+  cursor: pointer;
+  min-height: 55px;
+  padding-top: 5px;
+}
+
+.header {
+  font-family: 'Mulish';
+  font-size: $fz-medium;
+  font-weight: 700;
+  color: var(--color-bg);
+  transition: $st-trans;
+}
+
+.symbol {
+  width: 23px;
+  height: 23px;
+  transform-origin: center center;
+  transition: $st-trans;
+  &_active {
+    transform: rotate(180deg);
+    border-radius: 0%;
+  }
+}
+
+
+.content {
+  color: var(--color-bg);
+  overflow: hidden;
+  opacity: 0;
+  transition: 
+    height 0.3s ease,
+    opacity 0.2s ease 0.1s,
+    margin 0.3s ease;
+  height: 0;
+  &_active {
+    height: 80px;
+    margin: 10px 0px 10px 0px;
+    opacity: 1;
+  }
+}

@@ -9,7 +9,7 @@
   font-family: 'Mulish';
   font-weight: 400;
   font-size: $fz-body;
-  color: $color-black;
+  color: var(--color-bg);
   .tariff-point__wrapper {
     @include flex-gap(10px);
     align-items: center;

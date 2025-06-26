@@ -1,10 +1,10 @@
 // импорт внутренних модулей React
-import { useMemo } from 'react';
+import React, { useMemo } from 'react';
 
 // импорт ui-компонентов
-import Button from '@/shared/ui/button';
-import TariffName from '@/shared/ui/tariff-name';
-import TariffPoint from '@/shared/ui/tariff-point';
+import Button from '@/shared/ui/button/index.js';
+import { TariffName } from '@/shared/ui/tariff-name/index.js';
+import { TariffPoint } from '@/shared/ui/tariff-point/index.js';
 
 //импорт стилей для карточки
 import styles from './TariffCard.module.scss';
@@ -29,7 +29,7 @@ const FEATURE_LABELS: Record<tariffsTypes.FeatureKey, string> = {
 };
 
 
-export const TariffCard = ({
+export const TariffCard = React.memo(({
   price,
   infoTariff,
   nameTariff,
@@ -79,9 +79,9 @@ export const TariffCard = ({
       </div>
       
       {/* 6. Кнопка выбора тарифа */}
-      <Button>
+      <Button className={`${styles.btn}`}>
         {textBtn}
       </Button>
     </div>
   );
-};
+});

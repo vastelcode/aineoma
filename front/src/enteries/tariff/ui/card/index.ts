@@ -1,3 +1,1 @@
-import { TariffCard } from "./TariffCard.js";
-
-export default TariffCard;
+export { TariffCard } from "./TariffCard.js";

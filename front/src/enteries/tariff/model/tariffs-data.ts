@@ -87,7 +87,7 @@ export const tariffs_info : tariffsTypes.Tariff[] = [
   // безлимитный
   {
     id:'unlimited',
-    nameTariff: 'Безлимтный',
+    nameTariff: 'Безлимитный',
     modelTariff:'GPT-4 + DALL-E',
     textBtn: "Регистрация",
     isAllInclusive: true,

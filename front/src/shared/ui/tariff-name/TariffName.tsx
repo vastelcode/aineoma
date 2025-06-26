@@ -6,7 +6,7 @@ type TariffNameType = {
   isAllInclusive:boolean
 };
 
-export default function TariffName ({name, model, isAllInclusive}:TariffNameType)  {
+export function TariffName ({name, model, isAllInclusive}:TariffNameType)  {
   const baseClass = styles["tariff-name"];
   const modifierClass = isAllInclusive ? styles["tariff-name--all-inclusive"] : "";
   return (

@@ -8,7 +8,7 @@ type TariffPointType = {
   status: string
 };
 
-export default function TariffPoint ({text, value, status}: TariffPointType) {
+export function TariffPoint ({text, value, status}: TariffPointType) {
 
   const baseClass = styles["tariff-point"];
   const wrapperClass = styles[`tariff-point__wrapper`];

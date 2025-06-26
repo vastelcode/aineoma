@@ -76,7 +76,9 @@
 
 
 
+
 // Готовые миксины для анимаций
+
 
 @mixin swing($duration: 0.3s) {
   animation: swing $duration ease-in-out alternate-reverse infinite;

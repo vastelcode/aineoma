@@ -1,0 +1,63 @@
+@use '@/shared/styles' as *;
+
+.container {
+  @include fade-in(0.5s);
+  box-sizing: content-box;
+  padding-bottom: 100px;
+  gap: 150px;
+  width: 100%;
+}
+.tariffs {
+  gap: 55px;
+  background-image: url('@/shared/assets/images/image-shadow-tariffs.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
+.header {
+  font-family: 'RoadRadio';
+  font-weight: 700;
+  font-size: $fz-h1;
+  color: var(--color-text);
+}
+.tariffs__tabs {
+  min-width: 298px;
+  width: fit-content;
+  height: 30px;
+  border-radius: 50px;
+  border: $color-primary 2px solid;
+}
+.tariffs__tab {
+  @extend %flex-center;
+  border-radius: inherit;
+  flex: auto;
+  font-family: 'Mulish';
+  font-weight: 500;
+  font-size: $fz-body;
+  transition: $st-trans;
+  color: var(--color-text);
+  cursor: pointer;
+  &_active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+.tariffs__wrapper {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(4, 360px);
+  grid-template-rows: 628px;
+}
+
+.faq {
+  background-image: url('@/shared/assets/images/image-shadow-tariffs.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+.accordion {
+  gap: 20px;
+  flex-direction: column;
+  display: flex;
+}

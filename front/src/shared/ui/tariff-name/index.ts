@@ -1,3 +1,1 @@
-import TariffName from "./TariffName.js";
-
-export default TariffName
+export { TariffName } from "./TariffName.js";

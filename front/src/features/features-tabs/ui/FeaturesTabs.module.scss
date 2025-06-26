@@ -27,7 +27,7 @@
   }
 }
 .header {
-  color: var(--color-text);
+  color: var(--color-bg);
   font-family: 'Mulish';
   font-weight: 700;
   font-size: $fz-medium;
@@ -39,7 +39,7 @@
   font-family: 'Mulish';
   font-weight: 400;
   font-size: $fz-body;
-  color: var(--color-text);
+  color: var(--color-bg);
   margin-bottom: 150px;
 }
 .tab {

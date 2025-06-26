@@ -1,3 +1,1 @@
-import TariffPoint from "./TariffPoint.js";
-
-export default TariffPoint
+export { TariffPoint } from "./TariffPoint.js";
