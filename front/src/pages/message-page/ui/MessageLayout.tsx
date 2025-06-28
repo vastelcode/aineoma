@@ -20,7 +20,7 @@ export const MessageLayout = ({ content } : MessageLayoutProps) => {
       className={`${styles["message-layout__header"]}`}>
         {content.title}
       </p>
-      <Button>
+      <Button className={`${styles.btn}`}>
         <Link to={RoutePaths.ABOUT}>
         {content.buttonText}
         </Link>

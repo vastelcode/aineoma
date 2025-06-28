@@ -4,10 +4,14 @@ export const RoutePaths = {
   TARIFFS: '/tariffs',
   LOGIN: '/login',
   LOGUP: '/logup',
-  PROFILE:'/profile',
-  PAYMENT_SUCCESS:'/payment/success',
-  PAYMENT_ERROR:'/payment/error',
-  NOT_FOUND:'*'
+  MESSAGE: '/message/:type',
+  NOT_FOUND:'*',
+  CHAT_TEMPLATES:'/chat/',
+  CHAT_CHATS:'/chat/chats',
+  CHAT_IMAGES:'/chat/generation',
+  CHAT_SOUND:'/chat/sound',
+  CHAT_HISTORY:'/chat/history',
+  CHAT_PROFILE:'/chat/profile'
 }
 
 // тип для TypeScript

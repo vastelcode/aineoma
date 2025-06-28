@@ -1,0 +1,6 @@
+@use '@/shared/styles' as *;
+
+.chat-layout {
+  display: flex;
+  gap: 50px;
+}

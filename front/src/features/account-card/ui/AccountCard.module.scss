@@ -1,0 +1,28 @@
+@use '@/shared/styles' as *;
+
+.container {
+  width: 250px;
+  height: 80px;
+  background-color: rgba($color: $color-primary, $alpha: 0.1);
+}
+.image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.username {
+  font-family: 'Mulish';
+  font-size: $fz-body;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.text {
+  font-family: 'Mulish';
+  font-size: $fz-body;
+  font-weight: 500;
+  color: var(--color-text);
+}
+.img {
+  width: 24px;
+  height: 24px;
+}
