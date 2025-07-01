@@ -1,0 +1,37 @@
+@use '@/shared/styles' as *;
+
+.card {
+  width: 300px;
+  height: 130px;
+  border-radius: 30px;
+  cursor: pointer;
+  &_default {
+    background-color: rgba($color: $color-primary, $alpha: 0.1);
+  }
+  &_yellow {
+    background-color: rgba($color: #ffc600, $alpha: 0.1);
+  }
+  &_green {
+    background-color: rgba($color: #14e4b1, $alpha: 0.1);
+  }
+  &_red {
+    background-color: rgba($color: #dc3545, $alpha: 0.1);
+  }
+}
+.header {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: $fz-body;
+  font-family: 'Mulish';
+}
+.text {
+  color: var(--color-text);
+  font-size: $fz-body;
+  font-family: 'Mulish';
+  font-weight: 400;
+  width: 260px;
+  height: 57px;
+  overflow: hidden;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+}

@@ -1,4 +1,7 @@
+@use '@/shared/styles' as *;
+
 .container {
+  @include shadow;
   width: 250px;
   min-height: 100vh;
   padding-bottom: 15px;
@@ -10,4 +13,8 @@
   font-size: 20px;
   font-weight: 700;
   color: var(--color-text);
+}
+.logo {
+  width: 168px;
+  height: 38px;
 }

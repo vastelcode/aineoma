@@ -6,7 +6,7 @@ export const RoutePaths = {
   LOGUP: '/logup',
   MESSAGE: '/message/:type',
   NOT_FOUND:'*',
-  CHAT_TEMPLATES:'/chat/',
+  CHAT_TEMPLATES:'/chat/templates',
   CHAT_CHATS:'/chat/chats',
   CHAT_IMAGES:'/chat/generation',
   CHAT_SOUND:'/chat/sound',

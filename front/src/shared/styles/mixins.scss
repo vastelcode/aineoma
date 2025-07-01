@@ -8,3 +8,7 @@
   gap: $gap;
   flex-direction: column;
 }
+
+@mixin shadow($first: 0px, $second:13px, $third: 20px, $four: 0px) {
+  box-shadow: $first $second $third $four rgba($color: #000000, $alpha: 0.05);
+}

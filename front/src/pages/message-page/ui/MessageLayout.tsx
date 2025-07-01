@@ -25,7 +25,7 @@ export const MessageLayout = ({ content } : MessageLayoutProps) => {
         {content.buttonText}
         </Link>
       </Button>
-      <img src={content.imageSrc} alt={content.title} />
+      <img src={content.imageSrc} alt={content.title} className={`${styles.img}`}/>
     </div>
   );
 }

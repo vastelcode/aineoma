@@ -1,0 +1,58 @@
+@use '@/shared/styles' as *;
+
+.container {
+  min-width: 1670px;
+  @include fade-in(0.5s);
+}
+.categories__tabs {
+  min-width: 930px;
+  width: fit-content;
+  height: 35px;
+  border-radius: 50px;
+  border: $color-primary 2px solid;
+}
+.categories__tab {
+  @extend %flex-center;
+  border-radius: inherit;
+  flex: auto;
+  font-family: 'Mulish';
+  font-weight: 500;
+  font-size: $fz-body;
+  transition: $st-trans;
+  color: var(--color-text);
+  cursor: pointer;
+  &_active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+.grid {
+  @include fade-in(0.5s);
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(4, 130px);
+  column-gap: 40px;
+  row-gap: 20px;
+}
+.category__tab {
+  max-width: fit-content;
+  border-radius: 30px;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  font-family: 'Mulish';
+  font-weight: 700;
+  font-size: $fz-body;
+  color: var(--color-text);
+  &_default {
+    background-color: rgba($color: $color-primary, $alpha: 0.1);
+  }
+  &_yellow {
+    background-color: rgba($color: #ffc600, $alpha: 0.1);
+  }
+  &_green {
+    background-color: rgba($color: #14e4b1, $alpha: 0.1);
+  }
+  &_red {
+    background-color: rgba($color: #dc3545, $alpha: 0.1);
+  }
+}

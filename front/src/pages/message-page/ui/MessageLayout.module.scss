@@ -24,3 +24,6 @@
   width: 273px;
   height: 65px;
 }
+.img {
+  @include jack-in-the-box(3s);
+}

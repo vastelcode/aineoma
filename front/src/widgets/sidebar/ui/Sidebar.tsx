@@ -43,11 +43,11 @@ export const Sidebar = memo(() => {
   return (
     <div className={`${styles.container} flex flex-col justify-between items-center`}>
 
-      <div>
+      <div className='flex items-center flex-col'>
       <img 
         src={Logo} 
         alt="логотип AiNeoma" 
-        className="mb-12"
+        className={`mb-12 ${styles.logo}`}
       />
       
       <div className="flex gap-7 items-center mb-10">
@@ -68,7 +68,7 @@ export const Sidebar = memo(() => {
       </div>
       </div>
 
-      <div className='flex flex-col gap-12'>
+      <div className='flex flex-col gap-12 items-center'>
         <ProgressBar maxValue={1000} currentValue={500} width={190}/>
         <AccountCard username='Логин' avatar={Avatar} />
       </div>
