@@ -45,3 +45,16 @@
 .tab {
   background-color: var(--color-tabs);
 }
+
+@media (max-width:$content-size-1) {
+  .container {
+    width: $content-size-2;
+  }
+  .header,.text {
+    width: 500px;
+  }
+  .content {
+    width: 600px;
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,7 @@
+@use '@/shared/styles' as *;
+
+.container {
+  @extend %flex-center;
+  width: 1670px;
+  min-height: 980px;
+}

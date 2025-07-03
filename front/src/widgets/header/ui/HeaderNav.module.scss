@@ -63,3 +63,11 @@
     height: 45px;
   }
 }
+
+@media (max-width:$content-size-1) {
+  .header {
+    &__content {
+      width: $content-size-2;
+    }
+  }
+}

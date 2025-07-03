@@ -29,7 +29,7 @@ export const ChatsPage = () => {
         <div className={`flex gap-5`}>
           <textarea className={`${styles.input}`} placeholder='Начните чат'/>
           <button className={`${styles.btn}`}>
-            <img src={Icon} alt="" />
+            <img src={Icon} alt="иконка стрелки" />
           </button>
         </div>
       </div>

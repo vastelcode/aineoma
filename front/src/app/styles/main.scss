@@ -19,3 +19,9 @@ main {
   min-width: 1920px;
   height: auto;
 }
+
+@media (max-width: $content-size-1) {
+  #root {
+    min-width: $content-size-1;
+  }
+}

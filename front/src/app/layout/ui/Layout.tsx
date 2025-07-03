@@ -6,7 +6,7 @@ export function Layout() {
   return (
     <div className="layout">
       <HeaderNav/>
-      <main>
+      <main className="flex justify-center">
         <Outlet/>
       </main>
     </div>

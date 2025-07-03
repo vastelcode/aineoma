@@ -1,7 +1,10 @@
+import styles from './ImagesPage.module.scss';
+
+
 export const ImagesPage = () => {
   return (
-    <>
-    генерация изображений
-    </>
+    <div className={`${styles.container}`}>
+      
+    </div>
   );
 }

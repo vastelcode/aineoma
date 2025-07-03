@@ -1,1 +1,0 @@
-export * from './get-point-status.js';

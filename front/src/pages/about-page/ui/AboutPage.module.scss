@@ -72,3 +72,25 @@
   width: $content-size-1;
   gap: 65px;
 }
+
+
+@media (max-width:$content-size-1) {
+  .container {
+    width: $content-size-2;
+  }
+  .content {
+    width: $content-size-2;
+  }
+  .header {
+    font-size: $fz-h3;
+  }
+  .text {
+    font-size: $fz-medium;
+  }
+  .servises {
+    width: $content-size-2;
+  }
+  .servises__header {
+    font-size: $fz-h3;
+  }
+}
