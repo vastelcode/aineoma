@@ -1,0 +1,1 @@
+export { TariffPage } from './ui/TariffPage.js';

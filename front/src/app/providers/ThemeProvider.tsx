@@ -10,6 +10,7 @@ type ThemeVariables = {
   '--color-input':string;
   '--color-tabs':string;
   '--color-hover':string;
+  '--color-window-chat':string;
 };
 
 // конфигурация цветовых схем
@@ -19,14 +20,17 @@ const THEME_CONFIG: Record<'light' | 'dark', ThemeVariables> = {
     '--color-text':'#212D31',
     '--color-input':'#CCDCFC',
     '--color-tabs':'#303030',
-    '--color-hover':'#D8E3FB'
+    '--color-hover':'#D8E3FB',
+    '--color-window-chat': '#F9F9FF'
+
   },
   dark: {
     '--color-bg': '#212D31',
     '--color-text': '#F0F1FB',
     '--color-input': '#404A50',
     '--color-tabs': '#F3F5F8',
-    '--color-hover':'#364145'
+    '--color-hover':'#364145',
+    '--color-window-chat': '#374245'
   }
 };
 // провайдер для темы
