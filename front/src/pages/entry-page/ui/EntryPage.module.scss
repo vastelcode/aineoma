@@ -80,3 +80,45 @@
   transform-origin: center center;
 }
 
+@media (max-width:$content-size-1) {
+  .content {
+    width: $content-size-2;
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-position: center center;
+  }
+  .wrapper {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+@media (max-width:$content-size-2) {
+  .content {
+    width: $content-size-3;
+  }
+}
+@media (max-width:$content-size-3) {
+  .content {
+    width: $content-size-4;
+    background: none;
+    border-radius: none;
+  }
+  .wrapper {
+    width: $content-size-4;
+  }
+  .wrapperSecond {
+    width:$content-size-4;
+  }
+  .header-text {
+    font-size: $fz-subtitle;
+  }
+  .form {
+    width: 320px;
+  }
+  .btn {
+    width: 320px;
+  }
+}
+

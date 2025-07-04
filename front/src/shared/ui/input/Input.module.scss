@@ -32,3 +32,11 @@
     
   }
 }
+
+@media (max-width:$content-size-3) {
+  .input-container {
+    &__eye {
+      left: 280px;
+    }
+  }
+}
