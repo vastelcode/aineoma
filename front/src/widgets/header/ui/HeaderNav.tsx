@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { RoutePaths } from '@/app/providers/router/paths.js';
 
+
 // импортируем стили
 import styles from './HeaderNav.module.scss';
 
@@ -10,11 +11,15 @@ import styles from './HeaderNav.module.scss';
 import logoIconLight from '@/shared/assets/icons/Logo-Light.svg';
 import logoIconDark from '@/shared/assets/icons/Logo-Dark.svg';
 
+
+
 // импортируем необходимые компоненты
 import { Icon } from '@/shared/ui/icon/index.js';
 import { SwitchTheme } from '@/features/theme/index.js';
 
 export const HeaderNav = () => {
+
+
   const theme = useSelector((state : RootState) => state.theme.mode);
   return (
     <header
@@ -28,7 +33,7 @@ export const HeaderNav = () => {
         </div>
 
         <div 
-        className={`${styles["header__wrapper"]}`}>
+        className={`${styles["header__wrapper"]} `}>
           <SwitchTheme/>
 
           <nav 

@@ -22,6 +22,11 @@ main {
 
 @media (max-width: $content-size-1) {
   #root {
-    min-width: $content-size-1;
+    min-width: 100vw;
   }
 }
+// @media (max-width: $content-size-2) {
+//   #root {
+//     min-width: $content-size-2;
+//   }
+// }

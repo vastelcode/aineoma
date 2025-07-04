@@ -58,3 +58,28 @@
     padding-top: 10px;
   }
 }
+@media (max-width:$content-size-2) {
+  .container {
+    width: $content-size-3;
+  }
+  .header,.text {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .content {
+    width: 400px;
+  }
+}
+
+@media (max-width:$content-size-3) {
+  .container {
+    width: $content-size-4;
+    flex-direction: column;
+    gap: 0;
+    height: auto;
+    padding: 10px;
+  }
+  .content {
+    width: 100%;
+  }
+}

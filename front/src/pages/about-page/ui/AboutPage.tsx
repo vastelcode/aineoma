@@ -13,7 +13,7 @@ export function AboutPage() {
   return (
     <div className={`${styles.container} flex justify-center items-center flex-col`}>
       <div className={`${styles.content} flex`}>
-        <div>
+        <div className={`${styles["text-content"]}`}>
           <p className={`${styles.header}`}>CHATGPT и не только</p>
           <p className={`${styles.text}`}>
             Без VPN, на русском и даже с телефона. <br />
