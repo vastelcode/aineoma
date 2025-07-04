@@ -10,6 +10,13 @@ body {
   transition: $st-trans;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  #root {
+    scroll-behavior: smooth;
+  }
+}
+
+
 main {
   padding-top: 20px;
 }

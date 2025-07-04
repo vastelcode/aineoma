@@ -33,3 +33,12 @@ body {
   width: 320px;
   height: 65px;
 }
+
+@media (max-width:360px) {
+  .tariff-card {
+    width: 320px;
+  }
+  .btn {
+    width: 275px;
+  }
+}

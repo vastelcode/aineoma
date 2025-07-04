@@ -61,3 +61,25 @@
   flex-direction: column;
   display: flex;
 }
+
+@media (max-width:1536px) {
+  .container {
+    width: $content-size-1;
+  }
+  .tariffs__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width:$content-size-1) {
+  .accordion {
+    align-items: center;
+  }
+}
+@media (max-width:792px) {
+  .container {
+    width: 360px;
+  }
+  .tariffs__wrapper {
+    grid-template-columns: 1fr;
+  }
+}

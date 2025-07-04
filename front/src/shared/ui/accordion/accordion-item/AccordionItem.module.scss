@@ -33,7 +33,7 @@
 
 .content {
   color: var(--color-bg);
-  overflow: hidden;
+  overflow: scroll;
   opacity: 0;
   transition: 
     height 0.3s ease,
@@ -44,5 +44,19 @@
     height: 80px;
     margin: 10px 0px 10px 0px;
     opacity: 1;
+  }
+}
+
+@media (max-width:$content-size-1) {
+  .container {
+    width: 80%;
+  }
+}
+@media (max-width:792px) {
+  .container {
+    width: 100%;
+  }
+  .header {
+    font-size: $fz-body;
   }
 }
